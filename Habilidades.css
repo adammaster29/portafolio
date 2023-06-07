@@ -1,0 +1,156 @@
+.padre__habilidades{
+    background-image: url(/img/espacio.jpg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+/* animacion */
+
+.padre__habilidades-meteorito{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #f3efef; */
+   }
+ 
+   @keyframes vuelo {
+     0% {
+       transform: translateX(0);
+       opacity: 1;
+     }
+     100% {
+       transform: translateX(100vw);
+       opacity: 0;
+     }
+   }
+   
+   @keyframes aparecer {
+     0% {
+       opacity: 0;
+     }
+     100% {
+       opacity: 1;
+     }
+   }
+   .habilidades_meteorito{
+     display: flex;
+     /* border: 1px solid #e5ebe2; */
+     height: 50px;
+   }
+  
+   .meteorito {
+     /* Animación */
+   margin-top: 30%;
+     transform: scale(1.75);
+     animation: vuelo 15s infinite, aparecer 1s;
+     /* border: 1px solid #ffffff; */
+   }
+  
+   .meteorito__img{
+     width: 80px;
+     height: 40px;
+   }
+   .padre__luna{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid #e7e0e0; */
+   }
+   .luna__titulo{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgb(248, 87, 12), -1px -2px 2px red;
+   }
+  
+   .luna__contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.493);
+    border-radius: 20px 20px 80px 80px;
+    width: 300px;
+    height: 200px;
+    /* border: 1px solid #138d0f; */
+   }
+/* tierra */
+.padre__tierra{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid rgb(160, 3, 3); */
+
+}
+.tierra__img{
+    width: 500px;
+    height: 200px;
+    transform: scale(1.2) translateX(-10%) translateY(-10%);
+}
+.sol__img{
+  width: 400px;
+}
+
+   .carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #ebdede; */
+   }
+   .carousel__img{
+    color: rgb(73, 69, 69);
+    font-size: 50px;
+    font-weight: 800;
+   }
+   .carousel__nombre{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px darkcyan, -2px -3px 2px rgb(53, 148, 29);
+   }
+   .carousel__contenedor-button{
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    /* border: 1px solid #000; */
+   }
+   .carousel__button{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+font-weight: 700;
+cursor: pointer;
+   }
+   .carousel__button:hover{
+   text-shadow: 2px 2px 3px darkslateblue;
+   }
+  /* color habilidads */
+  .react{
+    color: rgb(50, 50, 170);
+  }
+  .javascript{
+    color: rgb(247, 247, 12);
+  }
+  .html5{
+    color: orangered;
+  }
+  .css3{
+    color: rgb(60, 60, 236);
+  }
+  .github{
+    color: black;
+  }
+  .postgresql{
+    color: rgb(27, 8, 139);
+  }
+  .nodejs{
+    color: rgb(5, 82, 5);
+  }
+  .bootstrap{
+    color: rgb(85, 6, 100);
+  }
