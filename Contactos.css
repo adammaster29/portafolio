@@ -1,0 +1,171 @@
+.padre__contactos{
+background-image: url(/img/fondo-marino.gif);
+background-size: cover;
+background-repeat: no-repeat;
+top: 0;
+left: 0;
+position: fixed;
+width: 100%;
+height: 100%;
+}
+
+.contactos__pez-animado{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid #030da5; */
+}
+.contactos__pez{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #ec0ce1; */
+}
+
+/* animacion pulpo y buso-pez */
+
+.buso-pez {
+    position: fixed;
+    right: 100%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  background-image: url(/img/buso-pez.gif);
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+    width: 300px;
+    height: 200px;
+    /* padding: 20px; */
+    transition: right 0.5s;
+  }
+
+  /* texto del pensamiento */
+  .pez__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fdfdfd98;
+    height: 130px;
+    margin-top: -100px;
+    border-radius: 70% 20px ;
+    gap:10px;
+  }
+  .texto__titulo{
+    color: white;
+    text-shadow: 2px 2px orangered, -2px -2px 3px rgb(56, 68, 56);
+  }
+  
+  .buso-pez.show {
+    right: 40%;
+  }
+  
+
+  /* animacion pulpo */
+  
+.pulpo {
+    position: fixed;
+    right: -100%;
+    top: 60%;
+    transform: translate(90%, -50%);
+    background-image: url(/img/pulpo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px;
+    /* padding: 20px; */
+    transition: right 1.2s;
+    transform: scale(0.75);
+  }
+  
+  .pulpo.show {
+    right: 40%;
+  }
+  
+  /* animacio nemo */
+  .nemo {
+    position: fixed;
+    right: -100%;
+    top: 60%;
+    transform: translate(100%, -50%);
+    background-image: url(/img/buso.gif);
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width:200px;
+    height: 150px;
+    transition: right 0.9s;
+  }
+
+  /* redes */
+  .nemo__redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fdfdfd98;
+    height: 130px;
+    gap: 18px;
+    margin-top: -100px;
+    border-radius: 70% 20px ;
+  }
+  .redes__titulo{
+    color: white;
+    text-shadow: 2px 2px orangered, -2px -2px 3px rgb(56, 68, 56);
+  }
+  .redes__contenedor-icon{
+    display: flex;
+    justify-content:center;
+    width:100%;
+    gap:10px;
+  }
+  .icon__redes-contacto{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .icon__redes-contacto:hover{
+    font-size: 30px;
+    color: rgb(88, 88, 35);
+  }
+  .nemo.show {
+    right: 30%;
+  }
+
+  /* anamacion de delfin */
+
+.proyectos__delfin{
+    display: flex;
+   }
+ 
+   @keyframes vuelo {
+     0% {
+       transform: translateX(0);
+       opacity: 1;
+     }
+     100% {
+       transform: translateX(100vw);
+       opacity: 1;
+     }
+   }
+   
+   @keyframes aparecer {
+     0% {
+       opacity: 1;
+     }
+     100% {
+       opacity: 1;
+     }
+   }
+ 
+   
+   .delfin {
+     /* Animación */
+   margin-top: 30%;
+     transform: scale(1.75);
+     animation: vuelo 45s infinite, aparecer 1s;
+   }
+   .delfin__img{
+     width: 100px;
+     height: 50px;
+   }
+  

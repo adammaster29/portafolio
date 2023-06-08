@@ -7,7 +7,7 @@ const Home = ({}) => {
     
     
     const [text, setText] = useState('');
-    const fullText = ' ADALBERTO AGUDELO '; // Texto completo que deseas mostrar
+    const fullText = ' ADALBERTO AGUDELO '; 
   
     useEffect(() => {
       let currentIndex = 0;
@@ -50,7 +50,7 @@ const Home = ({}) => {
                   <a href="https://www.linkedin.com/in/adalberto-manuel-a-2abbb4109/"><i className='redes redes__linkedin bx bxl-linkedin-square'></i></a>
                   <a href="https://github.com/adammaster29"> <i className='redes redes__github   bx bxl-github'></i></a>
                   <a href=""><i className='redes redes__twiter bx bxl-twitter'></i></a>
-                  <a href=""><i className='redes redes__message bx bx-message-detail'></i></a>
+                  <a href="mailto:adammaster29@gmail.com"><i className='redes redes__message bx bx-message-detail'></i></a>
                  
                   
                   
@@ -95,7 +95,7 @@ const Home = ({}) => {
                         <button onClick={()=>navigate("/")} className='menu__button menu__button-inicio'>Inicio</button>
                         <button onClick={()=>{navigate("/proyectos");()=>setModalmenu(false)}}  className='menu__button menu__button-proyectos'>Proyectos</button>
                         <button onClick={()=>navigate('/habilidades')} className='menu__button menu__button-habilidades'>Habilidades</button>
-                        <button className='menu__button menu__button-contactos'>Contactos</button>
+                        <button onClick={()=>navigate('/contactos')} className='menu__button menu__button-contactos'>Contactos</button>
                         <button onClick={cerrarmenu} className='menu__button menu__button-salir'>Salir</button>
                      </div>
                    </div>

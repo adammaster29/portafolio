@@ -65,16 +65,16 @@ const Proyectos = () => {
             <div className="proyectos__cards">
                 <div className="proyectos__ave">
                     <div onClick={abrirmodal} className="avion">
-                        <img className='avion__img' src="/img/avion.png" alt="" />
-                        <h1 className='avion__titulo'>Click Aqui</h1>
+                        <img className='avion__img' src="/img/avion.gif" alt="" />
+                       <img className='avion__titulo' src="/img/click.gif" alt="" />
                     </div>
 
                 </div>
 
 
                 <div className="proyectos__ave">
-                    <div className="ave "><img className='ave__img' src="/img/aves.png" alt="" /></div>
-                    <div className="ave "><img className='ave__img' src="/img/aves.png" alt="" /></div>
+                    <div className="ave "><img className='ave__img' src="/img/aguila.gif" alt="" /></div>
+                    <div className="ave "><img className='ave__img-2' src="/img/aguila.gif" alt="" /></div>
                 </div>
 
             </div>
@@ -106,7 +106,7 @@ const Proyectos = () => {
                         <button onClick={() => navigate("/")} className='menu__button menu__button-inicio'>Inicio</button>
                         <button onClick={() => navigate('/')} className='menu__button menu__button-proyectos'>Sobre Mi</button>
                         <button onClick={() => navigate('/habilidades')} className='menu__button menu__button-habilidades'>Habilidades</button>
-                        <button className='menu__button menu__button-contactos'>Contactos</button>
+                        <button onClick={() => navigate('/contactos')}  className='menu__button menu__button-contactos'>Contactos</button>
                         <button onClick={() => setModalproyecto(false)} className='menu__button menu__button-salir'>Salir</button>
                     </div>
                 </div>

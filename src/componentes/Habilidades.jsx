@@ -81,7 +81,7 @@ const abrirMenu = ()=>{
                         <button onClick={()=>navigate("/")} className='menu__button menu__button-inicio'>Inicio</button>
                         <button onClick={()=>{navigate("/proyectos");()=>setModalmenu(false)}}  className='menu__button menu__button-proyectos'>Proyectos</button>
                         <button onClick={()=>navigate('/')} className='menu__button menu__button-habilidades'>Sobre Mi</button>
-                        <button className='menu__button menu__button-contactos'>Contactos</button>
+                        <button onClick={()=>navigate('/contactos')} className='menu__button menu__button-contactos'>Contactos</button>
                         <button onClick={cerrarmenu} className='menu__button menu__button-salir'>Salir</button>
                      </div>
                    </div>
