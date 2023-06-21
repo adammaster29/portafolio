@@ -1,33 +1,33 @@
-.padre__proyectos{
-    background-image: url(/img/nubes-pasando.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    gap: 1rem;
+.padre__proyectos {
+  background-image: url(/img/nubes-pasando.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  gap: 1rem;
 }
-.proyectos__titulo{
-    color: white;
-    text-align: center;
-    font-weight: 800;
-    font-size: 45px;
-    text-shadow: 2px 2px 2px black, -2px -2px 2px rgb(138, 24, 24);
+.proyectos__titulo {
+  color: white;
+  text-align: center;
+  font-weight: 800;
+  font-size: 45px;
+  text-shadow: 2px 2px 2px black, -2px -2px 2px rgb(138, 24, 24);
 }
-.proyectos__cards{
-width: 100%;
-height: 100%;
-background-image: url(/img/montañas.png);
-background-size: cover;
-background-size: 100% 100%;
-background-repeat: no-repeat;
-/* transition: transform 0.3s; */
+.proyectos__cards {
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/montañas.png);
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* transition: transform 0.3s; */
 }
 /* .proyectos__cards:hover {
     transform: scale(1.1);
@@ -35,170 +35,164 @@ background-repeat: no-repeat;
 
 /* animacion */
 
-
-  .proyectos__ave{
-   display: flex;
-  }
-
-  @keyframes vuelo {
-    0% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(100vw);
-      opacity: 0;
-    }
-  }
-  
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  .ave__contenedor{
-    display: flex;
-  }
-  
-  .ave {
-    /* Animación */
-  margin-top: 30%;
-    transform: scale(1.75);
-    animation: vuelo 45s infinite, aparecer 1s;
-  }
-  .ave__img{
-    width: 100px;
-    height: 100px;
-  }
-  .ave__img-2{
-    width: 50px;
-    height:30px;
-  }
- 
-  /* animacion goku */
-  
-  @keyframes vuelo {
-    0% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    100% {
-      transform: translateX(100vw);
-      opacity: 0;
-    }
-  }
-  
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  .avion {
-    /* Estilos de la imagen del ave */
-    width: 100px;
-    height: 100px;
-    /* Animación */
-    animation: vuelo 30s infinite, aparecer 1s;
-  }
-  .avion__img{
-    width: 300px;
-    height: 200px;
-    z-index: 1;
-    position: absolute;
-    cursor: pointer;
-
-  }
-  .avion__titulo{
-z-index: 2;
-position: relative;
-margin-top: 80px;
-margin-left: 17px;
-cursor: pointer;
-color: red;
-font-weight: 800;
-font-size: 20px;
-width: 140px;
-text-align: center;
-  }
-  
-  /***************carousel **********************/
-
-  .cards__carousel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ffb311;
-    height:600px;
-    margin: 0 auto;
-width: 100%;
-  }
-
- 
-
-.cards__img{
-    opacity: 1;
-    border-radius: 12px;
- width: 100%;
-   height: 100%;
-   transform: scale(0.75);
+.proyectos__ave {
+  display: flex;
 }
-.cards__img:hover{
+
+@keyframes vuelo {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.ave__contenedor {
+  display: flex;
+}
+
+.ave {
+  /* Animación */
+  margin-top: 30%;
+  transform: scale(1.75);
+  animation: vuelo 45s infinite, aparecer 1s;
+}
+.ave__img {
+  width: 100px;
+  height: 100px;
+}
+.ave__img-2 {
+  width: 50px;
+  height: 30px;
+}
+
+/* animacion goku */
+
+@keyframes vuelo {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.avion {
+  /* Estilos de la imagen del ave */
+  width: 100px;
+  height: 100px;
+  /* Animación */
+  animation: vuelo 30s infinite, aparecer 1s;
+}
+.avion__img {
+  width: 300px;
+  height: 200px;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+}
+.avion__titulo {
+  z-index: 2;
+  position: relative;
+  margin-top: 80px;
+  margin-left: 17px;
+  cursor: pointer;
+  color: red;
+  font-weight: 800;
+  font-size: 20px;
+  width: 140px;
+  text-align: center;
+}
+
+/***************carousel **********************/
+
+.cards__carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid #a90404;
+}
+
+.cards__img {
+  opacity: 1;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.75);
+}
+.cards__img:hover {
   opacity: 95%;
   box-shadow: 2px 2px 3px 2px rgb(238, 240, 238);
- 
 }
-.cards__ancor{
+.cards__ancor {
   width: 100%;
   height: 80%;
-  border: 1px solid #e9e4e4;
 }
-.cards__nombre{
+.cards__nombre {
   font-size: 30px;
   font-weight: 700;
-  color:white;
+  color: white;
   text-shadow: 2px 3px 2px green, -2px -3px 2px gray;
 }
-.cards__contenedor-button{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 300px;
+.cards__contenedor-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 300px;
 }
-.cards__button{
-    background: none;
-    border: none;
-    font-size: 50px;
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.524);
-    cursor: pointer;
-  }
-  .cards__button-x{
-    font-size: 50px;
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.524);
-    cursor: pointer;
-  }
-  .cards__button-x:hover{
-    text-shadow: 2px 2px 2px rgb(236, 25, 9), -2px -2px 2px rgb(104, 100, 92);
-  }
-  .cards__button:hover{
-    text-shadow: 2px 2px 2px rgb(3, 3, 227), -2px -2px 2px rgb(92, 103, 104);
-  }
+.cards__button {
+  background: none;
+  border: none;
+  font-size: 50px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.524);
+  cursor: pointer;
+}
+.cards__button-x {
+  font-size: 50px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.524);
+  cursor: pointer;
+}
+.cards__button-x:hover {
+  text-shadow: 2px 2px 2px rgb(236, 25, 9), -2px -2px 2px rgb(104, 100, 92);
+}
+.cards__button:hover {
+  text-shadow: 2px 2px 2px rgb(3, 3, 227), -2px -2px 2px rgb(92, 103, 104);
+}
 
-  /* **************modal******************** */
-  .padre__proyectos-modal{
-    top: 0;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #000000cb;
-  }
+/* **************modal******************** */
+.padre__proyectos-modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000000cb;
+}

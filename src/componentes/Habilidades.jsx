@@ -40,7 +40,7 @@ const abrirMenu = ()=>{
         <div className='padre__habilidades'>
             <div className="padre__habilidades-meteorito">
                 <div className="habilidades_meteorito">
-                    <div className="meteorito "><img className='meteorito__img' src="/img/meteoritos.png" alt="" /></div>
+                    <div className="meteorito "><img className='meteorito__img' src="/img/meteorito.gif" alt="" /></div>
                 </div>
 
                 <div className="padre__luna">

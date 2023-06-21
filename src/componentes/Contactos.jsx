@@ -47,8 +47,8 @@ const abrirMenu = ()=>{
                     <div className="pez__texto">
                         <h2 className='texto__titulo'>Contactos</h2>
                         <a href="mailto:adammaster29@gmail.com?subject=Oferts Laboral&body=Oferta laboral para ti donde puedes crecer en nuestra compañia"><i className="bx bx-message bx-tada">message</i></a>
-                        <i onClick={llamar} class='bx bxs-phone-call bx-tada'  >3013803583</i>
-                        <i onClick={abrirMenu} className='bx bx-home bx-tada'>Inicio</i>
+                        <i onClick={llamar} class='bx bxs-phone-call bx-tada click-contacto'  >3013803583</i>
+                        <i onClick={abrirMenu} className='bx bx-home bx-tada click-contacto'>Inicio</i>
                     </div>
                 </div>
 
@@ -66,10 +66,10 @@ const abrirMenu = ()=>{
                         <h2 className='redes__titulo'>Redes</h2>
                         <div className='redes__contenedor-icon'>  
 
-                        <i className='bx bxl-linkedin redes__linkedin icon__redes-contacto'></i>
-                        <i className='bx bxl-whatsapp redes__whatsapp icon__redes-contacto'></i>
-                        <i className='bx bxl-twitter redes__twiter icon__redes-contacto'></i>
-                        <i className='bx bxl-github redes__github icon__redes-contacto'></i>
+                       <a href="https://www.linkedin.com/in/adalberto-manuel-a-2abbb4109/" target='_blank'> <i className='bx bxl-linkedin redes__linkedin icon__redes-contacto'></i>  </a>
+                       <a href="https://wa.me/qr/XT5FGS3S5BBLM1"> <i className='bx bxl-whatsapp redes__whatsapp icon__redes-contacto'></i> </a>
+                       <a href="https://twitter.com/Adamagudelo24" target='_blank'> <i className='bx bxl-twitter redes__twiter icon__redes-contacto'></i>  </a>
+                       <a href="https://github.com/adammaster29" target='_blank'> <i className='bx bxl-github redes__github icon__redes-contacto'></i> </a>
                         </div>
                     </div>
                 </div>

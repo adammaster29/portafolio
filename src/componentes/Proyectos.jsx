@@ -83,7 +83,8 @@ const Proyectos = () => {
                 <div className="padre__proyectos-modal">
 
                     <div className="cards__carousel">
-                        <a className='cards__ancor' href={images[carrusel].link} target='_blank' > <img className='cards__img' src={images[carrusel].src} alt="Carousel Image" /></a>
+                        <a className='cards__ancor' href={images[carrusel].link} target='_blank' > 
+                        <img className='cards__img' src={images[carrusel].src} alt="Carousel Image" /></a>
                         <p className='cards__nombre'>{images[carrusel].name}</p>
                         <div className='cards__contenedor-button'>
                             <button className='cards__button' onClick={previous}>&lt;</button>

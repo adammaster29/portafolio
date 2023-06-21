@@ -13,17 +13,13 @@ img {
 
 /* perfil */
 .padre {
-  border: 1px solid #c26f11;
-  background-image: url(/img/olga-blue.jpg);
+  background-image: url(/img/nevando.gif);
   background-size: cover;
+  background-size: 100% 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
   width: 100%;
-  padding: 1rem;
-  top: 0;
-  left: 0;
-  position: fixed;
+  height: 100%;
   gap: 1rem;
 }
 .padre__hijo {
@@ -31,7 +27,7 @@ img {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background: rgba(255, 255, 255, 0.548);
+  /* background: rgba(247, 242, 242, 0.548); */
   height: 100%;
   padding: 1rem;
   border-radius: 5px;
@@ -44,26 +40,39 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: white;
+  /* background: white; */
+  background-image: url(/img/santa.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-size: 50% 50%;
   width: 400px;
   height: 500px;
   padding: 6px;
   border-radius: 12px;
+  box-shadow: 0px 3px 23px 0px gray;
 }
-/* .hijo__perfil:hover {
-  background: rgba(255, 255, 255, 0.575);
-} */
+
 .hijo__perfil-img {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   margin-bottom: auto;
+  background-color: #276a73;
+  margin-top: 0.5rem;
 }
 .hijo__perfil-nombre {
   font-weight: 800;
   font-size: 25px;
   text-shadow: 2px 2px 2px rgb(16, 78, 68), -2px -2px 2px rgb(18, 164, 147);
   margin-bottom: auto;
+}
+.hijo__perfil-nombre:hover {
+  font-weight: 800;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px rgb(16, 78, 68), -2px -2px 2px rgb(18, 164, 147);
+  margin-bottom: auto;
+  transform: scale(1.5)  ;
 }
 /* redes */
 .hijo__perfil-redes{
@@ -72,6 +81,8 @@ align-items: center;
 justify-content: space-evenly;
 width: 100%;
 height: 80px;
+background: rgba(255, 255, 255, 0.379);
+border-radius: 5%;
 }
 
 .redes{
@@ -95,26 +106,12 @@ height: 80px;
 }
 
 /* DESARRALLADOR FULL STACK */
-.padre__hijo-descripcion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.548);
-    height: 200px;
-    border-radius: 5px;
-  }
-  .padre__hijo-descripcion p{
-    width: 80%;
-    font-size: 40px;
-    font-weight: 800;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    text-shadow: 2px 2px 2px rgb(16, 78, 68), -2px -2px 2px rgb(18, 164, 147);
-  }
 
+
+  .padre__hijo-descripcion p:hover{
+    transform: scale(1.5)  ;
+   
+  }
 
 /* sobre mi */
 .hijo__navegador-titulo {
@@ -151,6 +148,8 @@ height: 80px;
   border-radius: 3px;
   transition: all 1s ease-in;
 }
+
+/* *********************menu************* */
 .contenedor__button-menu {
   background: none;
   color: rgba(7, 81, 81, 0.775);
@@ -211,4 +210,7 @@ height: 80px;
     background: rgba(58, 157, 142, 0.753);
     color: white;
     font-weight: 700;
+}
+.menu__certificado{
+  width: 100%;
 }

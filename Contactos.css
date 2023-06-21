@@ -41,7 +41,7 @@ height: 100%;
     transition: right 0.5s;
   }
 
-  /* texto del pensamiento */
+  /* texto del pensamiento  contactos*/
   .pez__texto{
     display: flex;
     flex-direction: column;
@@ -56,7 +56,17 @@ height: 100%;
     color: white;
     text-shadow: 2px 2px orangered, -2px -2px 3px rgb(56, 68, 56);
   }
-  
+  a{
+    text-decoration: none;
+    color: rgb(73, 88, 6);
+    font-size: 20px;
+    font-weight: 800;
+  }
+  .click-contacto{
+    cursor: pointer;
+    font-weight: 800;
+    color: rgb(54, 80, 114);
+  }
   .buso-pez.show {
     right: 40%;
   }

@@ -1,0 +1,214 @@
+/* ****************Responsive Home   320px  ********************* */
+@media screen and (max-width: 430px) {
+  .padre {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  /* ****perfil**** */
+  .padre__hijo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+  }
+  .hijo__perfil {
+    background-size: 40% 40%;
+    background: none;
+    width: 100%;
+    height: 500px;
+
+  }
+  .hijo__perfil-img {
+    width: 230px;
+    height: 230px;
+  }
+  .hijo__perfil-nombre {
+    font-weight: 800;
+    font-size: 21px;
+    text-align: center;
+    text-shadow: 21px 12px 21px rgb(16, 78, 68), -2px -2px 2px rgb(18, 164, 147);
+  }
+  /* DESARRALLADOR FULL STACK */
+
+  .padre__hijo-descripcion p {
+    display: flex;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .hijo__navegador {
+    max-width: 100%;
+    min-height: 400px;
+  }
+  .hijo__navegador-texto {
+    font-size: 17px;
+  }
+
+
+/* ****************Responsive proyectos   320px  ********************* */
+.cards__ancor {
+  display: flex;
+  justify-content: center;
+padding: 3px;
+  border: 1px solid #4eb711;
+}
+.cards__img {
+  width: 450px;
+ 
+}
+
+
+}
+
+/* ****************Responsive Home   430px  ********************* */
+
+@media screen and (min-width: 431px) {
+  .padre {
+    display: flex;
+    width: 100%;
+  }
+  /* ****perfil**** */
+  .padre__hijo {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+  }
+  .hijo__perfil {
+    background-size: 40% 40%;
+    min-width: 100%;
+    min-height: 600px;
+    gap: 1rem;
+    text-align: center;
+  }
+  .hijo__perfil-img {
+    width: 270px;
+    height: 270px;
+  }
+  .hijo__perfil-nombre {
+    font-weight: 800;
+    font-size: 29px;
+  }
+  /* DESARRALLADOR FULL STACK */
+
+  .padre__hijo-descripcion p {
+    display: none;
+  }
+
+  .hijo__navegador {
+    min-width: 100%;
+    min-height: 600px;
+  }
+  .hijo__navegador-texto {
+    font-size: 22px;
+  }
+  .redes {
+    font-size: 45px;
+  }
+
+  /* ****************Responsive proyectos   430px  ********************* */
+.cards__ancor {
+  display: flex;
+  justify-content: center;
+padding: 3px;
+  border: 1px solid #a111b7;
+}
+.cards__img {
+  width: 550px;
+ 
+}
+
+}
+
+
+
+/* ****************Responsive Home   520px  ********************* */
+
+@media screen and (min-width: 520px) {
+  
+  /* ****perfil**** */
+ 
+  .hijo__perfil {
+    background-size: 40% 40%;
+    min-width: 80%;
+    min-height: 600px;
+    gap: 1rem;
+    text-align: center;
+  }
+ 
+  
+  /* DESARRALLADOR FULL STACK */
+
+  
+
+  .hijo__navegador {
+    min-width: 80%;
+    min-height: 600px;
+  }
+
+  
+  /* ****************Responsive proyectos   520px  ********************* */
+.cards__img {
+  width: 650px;
+ 
+}
+ 
+}
+
+
+/* ****************Responsive Home   768px  ********************* */
+
+@media screen and (min-width: 768px) {
+  .padre {
+    display: flex;
+    width: 100%;
+    position: fixed;
+  }
+  /* ****perfil**** */
+  .padre__hijo {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 2rem;
+  }
+  .hijo__perfil {
+    background-size: 40% 40%;
+    min-width: 300px;
+    min-height: 500px;
+    gap: 0.2rem;
+    text-align: center;
+  }
+  .hijo__perfil-img {
+    width: 270px;
+    height: 270px;
+  }
+  .hijo__perfil-nombre {
+    font-weight: 800;
+    font-size: 29px;
+  }
+  /* DESARRALLADOR FULL STACK */
+
+  .padre__hijo-descripcion p {
+    display: none;
+  }
+
+  .hijo__navegador {
+    min-width: 300px;
+    min-height: 500px;
+  }
+  .hijo__navegador-texto {
+    font-size: 22px;
+  }
+  .redes {
+    font-size: 45px;
+  }
+
+  
+  /* ****************Responsive proyectos   768px  ********************* */
+.cards__img {
+  width: 100%;
+}
+}
